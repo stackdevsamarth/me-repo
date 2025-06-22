@@ -1,0 +1,51 @@
+/your-project
+├── /public
+│   ├── /uploads          # assets
+│   └── favicon.ico
+├── /src
+│   ├── /components       # Reusable UI components
+│   │   ├── /admin        # Admin-specific components
+│   │   ├── /user         # User-specific components
+│   │   └── Navbar.tsx    # Shared navigation bar
+│   ├── /pages            # Next.js pages
+│   │   ├── /admin        # Admin panel pages
+│   │   │   ├── index.tsx # Admin dashboard
+│   │   │   ├── events.tsx
+│   │   │   ├── bootcamps.tsx
+│   │   │   ├── users.tsx # User management page
+│   │   │   └── api.tsx   # API tester for admin
+│   │   ├── /user         # User-side pages
+│   │   │   ├── index.tsx # Homepage
+│   │   │   ├── shop.tsx #page
+│   │   │   ├── events.tsx #page
+│   │   │   └── jobs.tsx #page
+│   │   │   ├── workshop.tsx #page
+│   │   │   └── mentorship.tsx #page
+│   │   ├── _app.tsx      # Global app config
+│   │   └── api           # Backend API routes
+│   │       ├── /admin    # Admin API routes
+│   │       │   ├── events.ts
+│   │       │   ├── users.ts
+│   │       │   └── bootcamps.ts
+│   │       └── /user     # User API routes
+│   │           ├── events.ts
+│   │           ├── jobs.ts
+│   │           └── mentorship.ts
+│   ├── /styles           # Global and component-specific styles
+│   │   ├── globals.css
+│   │   └── Navbar.module.css
+│   ├── /utils            # Utility functions
+│   │   ├── db.ts         # Database connection
+│   │   ├── auth.ts       # Authentication middleware
+│   │   ├── validators.ts # Validation functions
+│   │   └── logger.ts     # Logger utility
+│   └── /hooks            # React hooks
+│       └── useFetch.ts   # Custom fetch hook
+├── /prisma               # Prisma for database management (optional)
+│   └── schema.prisma
+├── /migrations           # Database migration files
+├── .env                  # Environment variables (DB, JWT, etc.)
+├── .gitignore            # Files and folders to ignore in Git
+├── package.json          # Dependencies and scripts
+├── tsconfig.json         # TypeScript configuration
+└── README.md             # Documentation
